@@ -51,3 +51,25 @@ AI research agent → generates report → AgentVault uploads to Shelby → perm
 - API for AI agents
 - automated blob uploads
 - dashboard for stored agent memories
+
+## Installation
+
+1. Install Shelby CLI
+2. Clone this repository
+
+git clone https://github.com/TurgayAcar49/shelby-agentvault.git
+cd shelby-agentvault
+
+3. Run the example script
+
+python app.py
+
+## Demo
+
+Example agent output stored with Shelby:
+
+agent_output.txt
+
+Upload example:
+
+shelby blob upload agent_output.txt
