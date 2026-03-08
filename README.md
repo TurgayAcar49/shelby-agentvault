@@ -1,5 +1,7 @@
 # Shelby AgentVault
 
+Decentralized memory layer for AI agents powered by Shelby Blob Storage.
+
 AgentVault is a lightweight developer tool that stores AI agent outputs
 using Shelby decentralized blob storage.
 
@@ -22,9 +24,18 @@ AI Agent
    ↓
 AgentVault
    ↓
-Shelby Blob Storage
+Shelby Blob Upload
+   ↓
+Shelby Decentralized Storage
    ↓
 Immutable AI Memory
+
+## Tech Stack
+
+- Python
+- Shelby CLI
+- Shelby Blob Storage
+- JSON agent outputs
 
 ## How it works
 
@@ -46,11 +57,26 @@ AI research agent → generates report → AgentVault uploads to Shelby → perm
 - autonomous agent memory
 - decentralized AI audit trail
 
+## Roadmap
+
+v0.1
+Basic Shelby blob upload integration
+
+v0.2
+Automatic AI agent log storage
+
+v0.3
+API for AI agents
+
+v0.4
+Dashboard for agent memory
+
 ## Future improvements
 
-- API for AI agents
-- automated blob uploads
-- dashboard for stored agent memories
+- agent output indexing
+- multi-agent memory sharing
+- search over stored agent outputs
+- web dashboard for stored blobs
 
 ## Installation
 
@@ -64,9 +90,20 @@ cd shelby-agentvault
 
 python app.py
 
+## Example Usage
+
+from agentvault import upload_output
+
+upload_output("agent_output.txt")
+
 ## Demo
 
 Example agent output stored with Shelby:
+
+## Repository
+
+GitHub:
+https://github.com/TurgayAcar49/shelby-agentvault
 
 agent_output.txt
 
