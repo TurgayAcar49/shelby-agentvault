@@ -1,29 +1,31 @@
 # Shelby AgentVault
 
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Storage](https://img.shields.io/badge/Storage-Shelby-orange)
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-experimental-orange)
 
 Decentralized memory layer for AI agents powered by Shelby Blob Storage.
 
-AgentVault is a lightweight developer tool that stores AI agent outputs
-using Shelby decentralized blob storage.
-
-The goal is to create a permanent and verifiable memory layer
-for autonomous AI agents.
+AgentVault is a lightweight developer tool that stores AI agent outputs using Shelby decentralized blob storage.  
+The goal is to create a **permanent and verifiable memory layer for autonomous AI agents.**
 
 ---
 
 ## Overview
 
-AI agents often generate valuable outputs such as research logs,
-analysis results, and decisions. These outputs are usually stored in
-centralized databases, which can be modified or lost.
+AI agents often generate valuable outputs such as:
 
-AgentVault solves this by uploading agent outputs to Shelby
-decentralized blob storage, making the data immutable,
-verifiable, and permanently accessible.
+- research logs
+- analysis results
+- automated decisions
+
+These outputs are usually stored in centralized databases, which can be modified, deleted, or lost.
+
+**AgentVault** solves this by uploading agent outputs to Shelby decentralized blob storage, making the data:
+
+- immutable
+- verifiable
+- permanently accessible
 
 ---
 
@@ -52,7 +54,7 @@ Immutable AI Memory
 
 ---
 
-## How it works
+## How It Works
 
 1. AI agent generates output  
 2. The output is saved locally as a file  
@@ -64,7 +66,17 @@ Immutable AI Memory
 
 ## Example Workflow
 
-AI research agent → generates report → AgentVault uploads to Shelby → permanent storage
+```
+AI Research Agent
+      ↓
+Generates Report
+      ↓
+AgentVault Upload
+      ↓
+Shelby Blob Storage
+      ↓
+Permanent AI Memory
+```
 
 ---
 
@@ -78,34 +90,18 @@ AI research agent → generates report → AgentVault uploads to Shelby → perm
 
 ---
 
-## Roadmap
+## Quick Start
 
-**v0.1**  
-Basic Shelby blob upload integration
+Clone the repository:
 
-**v0.2**  
-Automatic AI agent log storage
-
-**v0.3**  
-API for AI agents
-
-**v0.4**  
-Dashboard for agent memory
-
----
-
-## Installation
-
-Install Shelby CLI and clone the repository.
-
-```
+```bash
 git clone https://github.com/TurgayAcar49/shelby-agentvault.git
 cd shelby-agentvault
 ```
 
 Run the example script:
 
-```
+```bash
 python app.py
 ```
 
@@ -131,9 +127,11 @@ agent_output.txt
 
 Upload it to Shelby storage:
 
-```
+```bash
 shelby blob upload agent_output.txt
 ```
+
+---
 
 ## Example Agent Output
 
@@ -149,5 +147,47 @@ Example AI agent result stored by AgentVault:
 }
 ```
 
-This output can be uploaded to Shelby decentralized storage  
-to create a permanent and verifiable AI memory record.
+This output can be uploaded to Shelby decentralized storage to create a **permanent and verifiable AI memory record.**
+
+---
+
+## Project Structure
+
+```
+shelby-agentvault
+│
+├── app.py
+├── demo.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+│
+└── examples
+    └── agent_output.json
+```
+
+---
+
+## Roadmap
+
+**v0.1**
+
+Basic Shelby blob upload integration
+
+**v0.2**
+
+Automatic AI agent log storage
+
+**v0.3**
+
+API for AI agents
+
+**v0.4**
+
+Dashboard for agent memory
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
