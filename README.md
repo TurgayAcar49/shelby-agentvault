@@ -134,3 +134,20 @@ Upload it to Shelby storage:
 ```
 shelby blob upload agent_output.txt
 ```
+
+## Example Agent Output
+
+Example AI agent result stored by AgentVault:
+
+```json
+{
+  "agent": "research-agent",
+  "task": "AI market analysis",
+  "timestamp": "2026-03-09",
+  "summary": "AI adoption is accelerating across multiple industries.",
+  "confidence": 0.92
+}
+```
+
+This output can be uploaded to Shelby decentralized storage  
+to create a permanent and verifiable AI memory record.
